@@ -43,13 +43,14 @@ main {
 }
 /*======================== ARTICLE ========================*/
 article {
+    border: 1px solid var(--gray950);
     background: var(--white);
     height: 100%;
     max-width: 384px;
     max-height: 510px;
     padding: 1.5rem;
     border-radius: 20px;
-    box-shadow: 10px 10px var(--gray950);
+    box-shadow: 8px 8px var(--gray950);
 }
 .article-illustration {
     width: 100%;
@@ -101,11 +102,16 @@ article {
     color: var(--gray950);
     font-weight: var(--fw-800);
 }
-
+footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+}
 /*======================== MOBILE ========================*/
 @media only screen and (max-width: 425px) {
     article {
         max-width: 327px;
-        max-height: 470px;
+        max-height: 490px;
     }
 }
